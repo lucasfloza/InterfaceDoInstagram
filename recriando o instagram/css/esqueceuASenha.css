@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    outline: none;  
+}
+
+body {
+
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(24deg,black , rgb(22, 22, 22) ,rgb(43, 42, 42), rgb(22, 22, 22) , black);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.instagram-wrapper {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    height: 100%;
+    max-width: 700px;
+}
+
+.instagram-continue {
+
+    display: flex;
+    align-items: center; /* horizontal */
+    justify-content: center; /* vertical */
+    flex-direction: column;
+    width: 100%;
+    min-height: 34rem;
+}
+
+.esqueceuASenha {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #313131;
+    width: 60%;
+    padding: 1.3rem 40px;
+    border: 1px solid rgb(59, 54, 54);   
+}
+
+.cadeado {
+
+    height: 7rem;
+    
+}
+
+.esqueceuASenha h3{
+
+    margin:1rem;
+    color: rgb(173, 171, 171);
+}
+
+.esqueceuASenha p:nth-of-type(1){
+
+    text-align: center;
+    color: gray;
+    
+}
+
+.esqueceuASenha p:nth-of-type(2){
+
+    text-align: center;
+    color: gray;
+    letter-spacing:-2px;
+    word-spacing: 2px;
+    margin: 20px 0 10px 0;
+}
+
+.esqueceuASenha p:nth-of-type(2) span{
+
+    margin: 0 8px;
+}
+
+.esqueceuASenha input[type=text]{
+
+    margin: 1rem;
+    width: 100%;
+    padding: 5px;
+
+}
+
+.esqueceuASenha button{
+
+    width: 100%;
+    padding: 5px;
+    background-color: #0095f6;
+    border: none;
+    color: white;
+}
+
+
+.esqueceuASenha .criar a,.voltarLogin a{
+
+    text-decoration: none;
+    color: gray;
+    
+}
+
+.esqueceuASenha .criar a:hover,.voltarLogin a:hover{
+
+    color: white;
+
+}
+
+
+/* FOOTER */
+
+ footer{
+    width: 50%;
+    max-width: 700px;
+    align-items: center;
+    
+}
+
+footer .cima,.baixo{
+
+text-align: center;
+
+}
+
+
+footer a{
+
+    color: gray;
+    width: 100%;
+    text-align: center;
+    padding: 0 1%;
+    margin-right: -4px;
+    font-size: 12px;
+}
+
+footer a:hover{
+
+    color: white;
+}
+
+
+
+/* media queries */
+
+
+@media (max-width: 1235px) {
+    .instagram-wrapper,footer{
+        width: 80%;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .instagram-wrapper,footer {
+        width: 60%;
+        max-width: 450px;
+        min-width: 350px;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+    
+    .group {
+        border: 1px solid transparent;
+    }
+}

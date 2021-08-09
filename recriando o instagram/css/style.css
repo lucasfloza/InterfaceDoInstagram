@@ -1,0 +1,352 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    outline: none;  
+}
+
+body {
+
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(24deg,black , rgb(22, 22, 22) ,rgb(43, 42, 42), rgb(22, 22, 22) , black);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.instagram-wrapper {
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 50%;
+    height: 100%;
+    max-width: 700px;
+}
+
+.instagram-celular {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin-right: 40px;    
+}
+
+.instagram-celular img {
+
+    height: 50rem;
+}
+
+
+.instagram-continue {
+
+    display: flex;
+    align-items: center; /* horizontal */
+    justify-content: space-around; /* vertical */
+    flex-direction: column;
+    width: 60%;
+    min-height: 34rem;
+}
+
+.group {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #313131;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid rgb(59, 54, 54);   
+}
+
+.instagram-logo {
+
+    height: 3.5rem;
+}
+
+.profile-photo {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 1rem 0 0 0;
+}
+
+.profile-photo img {
+
+    height: 8rem;
+}
+
+.instagram-login {
+
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 1rem 0 2rem 0;
+}
+
+.instagram-logout {
+
+    color: #0095f6;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem 0;
+}
+
+        /* Oculto */
+
+.oculto{
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #313131;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid rgb(59, 54, 54);
+}
+
+
+.oculto .login{
+
+    width: 70%;
+    height: 30px;
+    margin: 40px 0 10px 0;
+    background-color: rgb(97, 109, 106);
+}
+
+.oculto .login .inputLogin{
+
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    background-color:#313131 ;
+    border: 1px solid rgb(82, 79, 79);
+}
+
+.oculto .senha{
+
+    width: 70%;
+    height: 30px;
+    padding: 0;
+    margin-bottom: 35px;
+}
+
+.oculto .senha .inputSenha{
+    
+    width: 100%;
+    border: 1px solid rgb(82, 79, 79);
+    height: 30px;
+    background-color: #313131;
+    padding: 0px 70px 0px 5px;
+}
+
+.oculto .senha .mostrar{
+
+    position: absolute;
+    margin-left:-64px;
+    padding: 8px;
+    height: 30px;
+    background-color:transparent;
+    border: none;
+    color: gray;
+    cursor: pointer ;
+}
+
+.oculto .mostrar:hover{
+
+    background-color:rgba(0, 0, 0, 0.452);
+}
+
+.oculto p a{
+
+    display: flex;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color:  #3b5998;
+    font-weight: bold;
+    align-items: center; 
+}
+
+.oculto p a i{
+
+    font-size: 10px;
+    padding: 3px 2px 3px 10px;
+    margin-right: 6px;
+    background-color:#3b5998;
+    color: white;
+}
+
+.oculto p #esqueceuASenha{
+
+    color:#999999;
+    font-weight:normal !important;
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+.oculto p #esqueceuASenha:hover{
+    color: rgb(255, 255, 255);
+}
+
+        /* Cadastro */
+
+.cadastre-se{
+
+    width: 100%;
+    padding:20px 5px;
+    background-color: #313131;
+    border: 1px solid rgb(59, 54, 54);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.cadastre-se p{
+
+    color: gray;
+}
+
+.cadastre-se p a{
+
+    text-decoration: none;
+    color: rgb(19, 17, 17);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cadastre-se p a:hover{
+
+    color:white /* black */;
+}
+
+        /* Baixar o app */
+
+
+.aplicativos{
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+    color: rgb(160, 160, 160);
+}
+
+.aplicativos p{
+
+    color: white;
+    margin-bottom: 15px;
+    
+}
+
+.aplicativos .download {
+    
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:10px;
+}
+
+.aplicativos .download .app-download {
+    
+    height: 3rem;
+    width: 8.2rem;
+    background-size: cover;
+    background-color:#3b5998;
+}
+
+.aplicativos .download .g-play img{
+
+    width: 8.2rem;
+    height: 3rem;
+}
+
+.aplicativos .download .a-store img{
+
+    width: 8.2rem;
+    height: 3rem;
+}
+
+/* FOOTER */
+
+ footer{
+    width: 50%;
+    max-width: 700px;
+    align-items: center;
+    
+}
+
+footer .cima,.baixo{
+
+text-align: center;
+
+}
+
+
+footer a{
+
+    color: gray;
+    width: 100%;
+    text-align: center;
+    padding: 0 1%;
+    margin-right: -4px;
+    font-size: 12px;
+}
+
+footer a:hover{
+
+    color: white;
+}
+
+
+
+/* media queries */
+
+
+@media (max-width: 1235px) {
+    .instagram-wrapper,footer{
+        width: 80%;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .instagram-wrapper,footer {
+        width: 60%;
+        max-width: 450px;
+        min-width: 350px;
+    }
+
+    .instagram-celular {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+    
+    .group {
+        border: 1px solid transparent;
+    }
+}
